@@ -5,6 +5,16 @@
 
 ## For open file Node-Red have a requirement:
 1. Install NodeJS
-- in MacOS, it is `~/Documents/Arduino/libraries`
-- in Linux, it is `~/Arduino/libraries` 
-- in Windows, it is `Documents/Arduino/libraries` 
+- For file Node-RedMonitoring, use OS Windows and download File at [nodejs.org](https://nodejs.org/en/download/current)
+- For file Node-RedKontrol, use OS Linux and download File at [snapcraft,oi](https://snapcraft.io/node), use 20/stable
+2. Instal node-red
+- Windows, use this [link](https://nodered.org/docs/getting-started/windows)
+- Linux, use this [link](https://www.npmjs.com/package/node-red)
+3. Open node-red in browser and put in http://127.0.0.1:1880/
+4. import file Node-Red
+- click hamburger icon
+- chose Import
+- select file Node-Red
+- and click import
+
+###Thats a simple tutorial how to open folder arduino and file Node-Red
