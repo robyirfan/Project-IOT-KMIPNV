@@ -10,7 +10,7 @@
 2. Instal node-red
 - Windows, use this [link](https://nodered.org/docs/getting-started/windows)
 - Linux, use this [link](https://www.npmjs.com/package/node-red)
-3. Open node-red in browser and put in "http://127.0.0.1:1880/"
+3. Open node-red in browser and put in 'http://127.0.0.1:1880/'
 4. import file Node-Red
 - click hamburger icon
 - chose Import
