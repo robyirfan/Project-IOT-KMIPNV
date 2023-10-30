@@ -19,4 +19,4 @@
 - and click import
 
 ## Sum
-This project can help you monitoring and controlling via LoRaWAN for saving more energy to use
+This project can help you monitoring and controlling via LoRaWAN for saving more energy to use.
