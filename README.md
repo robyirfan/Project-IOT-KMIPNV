@@ -5,4 +5,4 @@
 
 ## For open file Node-Red have a requirement:
 1. Install NodeJS
-   -for file Node-RedMonitoring
+2. -for file Node-RedMonitoring
