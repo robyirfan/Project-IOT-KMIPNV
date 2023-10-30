@@ -5,4 +5,6 @@
 
 ## For open file Node-Red have a requirement:
 1. Install NodeJS
-2. -for file Node-RedMonitoring
+- in MacOS, it is `~/Documents/Arduino/libraries`
+- in Linux, it is `~/Arduino/libraries` 
+- in Windows, it is `Documents/Arduino/libraries` 
