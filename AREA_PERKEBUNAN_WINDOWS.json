@@ -1,0 +1,809 @@
+[
+    {
+        "id": "e2aae62297e76348",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c52b26a844a812e8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "au1.cloud.thethings.network",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cc3bdade3d5c03f1",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1c64c688ebf38b67",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 70,
+                "sy": 34,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 10,
+                "px": 0,
+                "py": 18
+            }
+        }
+    },
+    {
+        "id": "233b2d7ed24182d2",
+        "type": "MySQLdatabase",
+        "name": "node1",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "node1",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "3598882859509214",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "192.168.213.5",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "jmxz6i941xfteujxi93vnlfmazm6pwf4onn0n7qcoudlpa4rdncagu99iljn4lt1",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "bd7f85983c29eeb3",
+        "type": "node-inst-server",
+        "name": "cek",
+        "port": "5000",
+        "useHttps": false,
+        "keyPath": "",
+        "certPath": ""
+    },
+    {
+        "id": "e7102087b8560a17",
+        "type": "node-inst-server",
+        "name": "ssss",
+        "port": "8080",
+        "useHttps": false,
+        "keyPath": "",
+        "certPath": ""
+    },
+    {
+        "id": "591c18670deb598d",
+        "type": "ui_group",
+        "name": "Suhu Udara",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6d01ad07f32e6309",
+        "type": "ui_group",
+        "name": "Kelembapan Udara",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "20e08231fb89a00e",
+        "type": "ui_group",
+        "name": "Panel",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d82e3f17b60849a3",
+        "type": "ui_tab",
+        "name": "Area Perkebunan",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5495c341c8d909bc",
+        "type": "ui_group",
+        "name": "Panel",
+        "tab": "d82e3f17b60849a3",
+        "order": 1,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "543815e8bc81ace0",
+        "type": "ui_tab",
+        "name": "Tes Perkebunan",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "13566c328c80a4d3",
+        "type": "ui_group",
+        "name": "Panel",
+        "tab": "543815e8bc81ace0",
+        "order": 1,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "91eece0b5c2dfe2a",
+        "type": "ui_group",
+        "name": "Node Main",
+        "tab": "421f754eb4fef785",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "421f754eb4fef785",
+        "type": "ui_tab",
+        "name": "Perkebunan",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7e0bae57fcc9c059",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "e957a0896e1d8fcd",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "65cab65f63b9e78d",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "e957a0896e1d8fcd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e957a0896e1d8fcd",
+        "type": "ui_tab",
+        "name": "Roby Ganteng",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "61b58dba18e59aca",
+        "type": "mqtt in",
+        "z": "e2aae62297e76348",
+        "name": "TEMPERATURE",
+        "topic": "v3/sidang-lora@ttn/devices/eui-70b3d57ed00683cc/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c52b26a844a812e8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "c331634de31c3cd6"
+            ]
+        ]
+    },
+    {
+        "id": "df149f3743089568",
+        "type": "function",
+        "z": "e2aae62297e76348",
+        "name": "function 8",
+        "func": "msg.payload = msg.payload['uplink_message']['decoded_payload']['humidity'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "bd15cc0418ede55b",
+                "39f749e63a6138f3",
+                "e7f4fade42f02685"
+            ]
+        ]
+    },
+    {
+        "id": "bd15cc0418ede55b",
+        "type": "debug",
+        "z": "e2aae62297e76348",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4b0fdd6ea7f37bb5",
+        "type": "mqtt in",
+        "z": "e2aae62297e76348",
+        "name": "dbase",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c52b26a844a812e8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 720,
+        "wires": [
+            [
+                "b7339601d6fa6add"
+            ]
+        ]
+    },
+    {
+        "id": "b7339601d6fa6add",
+        "type": "function",
+        "z": "e2aae62297e76348",
+        "name": "function 9",
+        "func": "msg.payload1 = msg.payload['uplink_message']['decoded_payload']['temperature'];\nmsg.payload2 = msg.payload['uplink_message']['decoded_payload']['humidity'];\nmsg.payload3 = msg.payload['uplink_message']['decoded_payload']['int_data_hujan'];\n\nmsg.topic = \"INSERT INTO datanode1(temperature, humidity, data_hujan) VALUES ('\"+msg.payload1+\"', '\"+msg.payload2+\"', '\"+msg.payload3+\"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "afcf20fad503c566",
+                "7dad1a1416b0e931"
+            ]
+        ]
+    },
+    {
+        "id": "39f749e63a6138f3",
+        "type": "ui_text",
+        "z": "e2aae62297e76348",
+        "group": "91eece0b5c2dfe2a",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Hum Udara",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 650,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "be24a8556da32c57",
+        "type": "ui_text",
+        "z": "e2aae62297e76348",
+        "group": "91eece0b5c2dfe2a",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Temp Udara",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "afcf20fad503c566",
+        "type": "mysql",
+        "z": "e2aae62297e76348",
+        "mydb": "233b2d7ed24182d2",
+        "name": "dbasenode1",
+        "x": 710,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "836bfcc0da15587b",
+        "type": "mqtt in",
+        "z": "e2aae62297e76348",
+        "name": "HUM UDARA",
+        "topic": "v3/sidang-lora@ttn/devices/eui-70b3d57ed00683cc/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c52b26a844a812e8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "df149f3743089568"
+            ]
+        ]
+    },
+    {
+        "id": "c331634de31c3cd6",
+        "type": "function",
+        "z": "e2aae62297e76348",
+        "name": "function 10",
+        "func": "msg.payload = msg.payload['uplink_message']['decoded_payload']['temperature'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "be24a8556da32c57",
+                "8ec49224a50382db",
+                "b0d14fce3166c26e"
+            ]
+        ]
+    },
+    {
+        "id": "7dad1a1416b0e931",
+        "type": "debug",
+        "z": "e2aae62297e76348",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "8ec49224a50382db",
+        "type": "debug",
+        "z": "e2aae62297e76348",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fe6ce441f853085c",
+        "type": "mqtt in",
+        "z": "e2aae62297e76348",
+        "name": "HUM TANAH",
+        "topic": "v3/sidang-lora@ttn/devices/eui-70b3d57ed00683cc/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c52b26a844a812e8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "7417cedd70b0a516"
+            ]
+        ]
+    },
+    {
+        "id": "7417cedd70b0a516",
+        "type": "function",
+        "z": "e2aae62297e76348",
+        "name": "function 11",
+        "func": "msg.payload = msg.payload['uplink_message']['decoded_payload']['int_data_hujan'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "1b78c7237d971970",
+                "8b6b4dc3cfaa1f27"
+            ]
+        ]
+    },
+    {
+        "id": "1b78c7237d971970",
+        "type": "debug",
+        "z": "e2aae62297e76348",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8b6b4dc3cfaa1f27",
+        "type": "ui_gauge",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "group": "91eece0b5c2dfe2a",
+        "order": 5,
+        "width": 8,
+        "height": 4,
+        "gtype": "wave",
+        "title": "Hum Tanah",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5441485ad41ebd50",
+        "type": "inject",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "40",
+        "payloadType": "str",
+        "x": 390,
+        "y": 580,
+        "wires": [
+            [
+                "8b6b4dc3cfaa1f27"
+            ]
+        ]
+    },
+    {
+        "id": "bd2644df841b8ac7",
+        "type": "inject",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "80",
+        "payloadType": "num",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "39f749e63a6138f3",
+                "e7f4fade42f02685"
+            ]
+        ]
+    },
+    {
+        "id": "cb5512bb6a876ca4",
+        "type": "inject",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "be24a8556da32c57",
+                "b0d14fce3166c26e"
+            ]
+        ]
+    },
+    {
+        "id": "b0d14fce3166c26e",
+        "type": "ui_chart",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "group": "91eece0b5c2dfe2a",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7f4fade42f02685",
+        "type": "ui_chart",
+        "z": "e2aae62297e76348",
+        "name": "",
+        "group": "91eece0b5c2dfe2a",
+        "order": 4,
+        "width": 8,
+        "height": 6,
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    }
+]
