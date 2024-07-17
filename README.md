@@ -5,8 +5,8 @@
 
 ## For open file Node-Red have a requirement:
 1. Install NodeJS
-- For file Node-RedMonitoring, use OS Windows and download File at [nodejs.org](https://nodejs.org/en/download/current)
-- For file Node-RedKontrol, use OS Linux and download File at [snapcraft,oi](https://snapcraft.io/node), use 20/stable
+- For file AREA_PERKEBUNAN_WINDOWS, use OS Windows and download File at [nodejs.org](https://nodejs.org/en/download/current)
+- For file AREA_IRIGASI_UBUNTU, use OS Linux and download File at [snapcraft,oi](https://snapcraft.io/node), use 20/stable
 2. Instal node-red
 - Windows, use this [link](https://nodered.org/docs/getting-started/windows)
 - Linux, use this [link](https://www.npmjs.com/package/node-red)
@@ -15,7 +15,7 @@
 4. import file Node-Red
 - click hamburger icon
 - chose Import
-- select file Node-Red
+- select file AREA_PERKEBUNAN_WINDOWS for windows and select file AREA_IRIGASI_UBUNTU for ubuntu
 - and click import
 
 ## Sum
