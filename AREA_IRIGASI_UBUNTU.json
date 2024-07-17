@@ -1,0 +1,345 @@
+[
+    {
+        "id": "107c0e4296e4bbf5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ba8f721461846115",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 55,
+                "sy": 40,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7ad86a8d14e2eb8c",
+        "type": "ui_tab",
+        "name": "Irigasi",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3e1d65b17bde4194",
+        "type": "ui_group",
+        "name": "Volume Air",
+        "tab": "7ad86a8d14e2eb8c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fe8defdae4dfa9c0",
+        "type": "ui_group",
+        "name": "RelayPompaAir",
+        "tab": "7ad86a8d14e2eb8c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4bf983081ec12c9",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0578eb3189e72e6f",
+        "type": "ui_spacer",
+        "z": "107c0e4296e4bbf5",
+        "name": "spacer",
+        "group": "3e1d65b17bde4194",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fdcea1f045729d0f",
+        "type": "ui_spacer",
+        "z": "107c0e4296e4bbf5",
+        "name": "spacer",
+        "group": "3e1d65b17bde4194",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "937fc7038f1fd326",
+        "type": "ui_spacer",
+        "z": "107c0e4296e4bbf5",
+        "name": "spacer",
+        "group": "3e1d65b17bde4194",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8fd025a8b26bfda7",
+        "type": "ui_spacer",
+        "z": "107c0e4296e4bbf5",
+        "name": "spacer",
+        "group": "3e1d65b17bde4194",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "85b0bfd20ad83a2c",
+        "type": "ui_switch",
+        "z": "107c0e4296e4bbf5",
+        "name": "Pompa",
+        "label": "switch",
+        "tooltip": "",
+        "group": "fe8defdae4dfa9c0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "room/light",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "off",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "on",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "c6d42f4134d01b05",
+                "10961586da3b150d"
+            ]
+        ]
+    },
+    {
+        "id": "c6d42f4134d01b05",
+        "type": "mqtt out",
+        "z": "107c0e4296e4bbf5",
+        "name": "MQTT OUT",
+        "topic": "room/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b4bf983081ec12c9",
+        "x": 350,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "10961586da3b150d",
+        "type": "debug",
+        "z": "107c0e4296e4bbf5",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "392b6e242f37c761",
+        "type": "mqtt in",
+        "z": "107c0e4296e4bbf5",
+        "name": "",
+        "topic": "esp8266/gentong",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b4bf983081ec12c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "ef601e0d43c235eb",
+                "8984615fc05e5b60"
+            ]
+        ]
+    },
+    {
+        "id": "ef601e0d43c235eb",
+        "type": "ui_gauge",
+        "z": "107c0e4296e4bbf5",
+        "name": "",
+        "group": "3e1d65b17bde4194",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "gauge",
+        "label": "Liter",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1.7",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8984615fc05e5b60",
+        "type": "debug",
+        "z": "107c0e4296e4bbf5",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 180,
+        "wires": []
+    }
+]
