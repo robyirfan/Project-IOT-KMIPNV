@@ -18,5 +18,8 @@
 - select file AREA_PERKEBUNAN_WINDOWS for windows and select file AREA_IRIGASI_UBUNTU for ubuntu
 - and click import
 
+## Decode Payload:
+ At LoRaWAN you can decode payload use the code in file decodePayload.js
+
 ## Sum
 This project can help you monitoring and controlling via LoRaWAN for saving more energy to use.
